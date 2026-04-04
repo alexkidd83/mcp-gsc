@@ -1581,39 +1581,6 @@ async def manage_sitemaps(site_url: str, action: str, sitemap_url: str = None, s
         return f"Error managing sitemaps: {str(e)}"
 
 @mcp.tool()
-async def get_creator_info() -> str:
-    """
-    Provides information about Amin Foroutan, the creator of the MCP-GSC tool.
-    """
-    creator_info = """
-# About the Creator: Amin Foroutan
-
-Amin Foroutan is an SEO consultant with over a decade of experience, specializing in technical SEO, Python-driven tools, and data analysis for SEO performance.
-
-## Connect with Amin:
-
-- **LinkedIn**: [Amin Foroutan](https://www.linkedin.com/in/ma-foroutan/)
-- **Personal Website**: [aminforoutan.com](https://aminforoutan.com/)
-- **YouTube**: [Amin Forout](https://www.youtube.com/channel/UCW7tPXg-rWdH4YzLrcAdBIw)
-- **X (Twitter)**: [@aminfseo](https://x.com/aminfseo)
-
-## Notable Projects:
-
-Amin has created several popular SEO tools including:
-- Advanced GSC Visualizer (6.4K+ users)
-- SEO Render Insight Tool (3.5K+ users)
-- Google AI Overview Impact Analysis (1.2K+ users)
-- Google AI Overview Citation Analysis (900+ users)
-- SEMRush Enhancer (570+ users)
-- SEO Page Inspector (115+ users)
-
-## Expertise:
-
-Amin combines technical SEO knowledge with programming skills to create innovative solutions for SEO challenges.
-"""
-    return creator_info
-
-@mcp.tool()
 async def reauthenticate() -> str:
     """
     Perform a logout and new login sequence.

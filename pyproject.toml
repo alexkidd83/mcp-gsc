@@ -40,3 +40,14 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 py-modules = ["gsc_server"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "integration: live API tests (require valid token.json)"
+]
+# Show a short summary of all non-passing tests
+addopts = "-v --tb=short"
